@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:elevation="5dp"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title_texView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="note title"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginVertical="4dp"/>
+        <TextView
+            android:id="@+id/content_texView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="this can be note content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="17sp"
+            android:layout_marginVertical="4dp"/>
+
+        <TextView
+            android:id="@+id/time_stamp_texView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:gravity="right"
+            android:text="time stamp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
